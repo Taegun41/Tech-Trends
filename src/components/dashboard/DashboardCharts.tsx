@@ -86,7 +86,7 @@ export default function DashboardCharts({
               fill="#8884d8"
               dataKey="count"
               nameKey="location"
-              label={({ location, value }) => `${location} : ${value}`}
+              label={({ name, value }) => `${name} : ${value}`}
             >
               {locationStats.map((entry, index) => (
                 <Cell

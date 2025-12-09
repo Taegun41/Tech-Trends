@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 // 타입 정의가 필요하다면 types.ts 같은 곳에 모아두는 게 좋지만, 일단 여기서 받아옵니다.
 interface Job {
-  id: number;
+  id: string;
   title: string;
   company: string;
   experienceLevel: string;

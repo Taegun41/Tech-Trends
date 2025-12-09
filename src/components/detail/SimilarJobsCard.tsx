@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // 타입 재사용을 위해 Job 인터페이스 정의 (types.ts가 있다면 import)
 interface Job {
-  id: number;
+  id: string;
   title: string;
   company: string;
   salary: { min: number; max: number };

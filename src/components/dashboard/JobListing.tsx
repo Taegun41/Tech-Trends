@@ -2,21 +2,12 @@
 
 import Link from "next/link";
 import { MapPin, DollarSign, Briefcase } from "lucide-react";
+import { JobPosting } from '@/src/data/jobData'
 
-// Job 데이터의 타입을 정의합니다. (원래 mockJobs에 있던 구조)
-interface Job {
-  id: number;
-  title: string;
-  company: string;
-  experienceLevel: string;
-  techStack: string[];
-  location: string;
-  salary: { min: number; max: number };
-  employmentType: string;
-}
+
 
 interface JobListingProps {
-  jobs: Job[];
+  jobs: JobPosting[];
 }
 
 export default function JobListing({ jobs }: JobListingProps) {

@@ -1,4 +1,4 @@
-import { Job } from "@/src/detail_hooks/JobSearch"; // Job 타입 가져오기
+import { JobPosting as Job } from "@/src/data/jobData"
 import JobHeader from "./JobHeader";
 import JobInfoGrid from "./JobInfoGrid";
 import JobContent from "./JobContent";

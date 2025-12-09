@@ -1,18 +1,8 @@
 import { useState, useMemo } from "react";
+import { JobPosting } from '@/src/data/jobData'
 
-// Job 타입 정의 (위와 동일, 실제로는 types.ts에서 import 추천)
-interface Job {
-  id: number;
-  title: string;
-  company: string;
-  experienceLevel: string;
-  techStack: string[];
-  location: string;
-  salary: { min: number; max: number };
-  employmentType: string;
-}
 
-export function useJobFilter(initialJobs: Job[]) {
+export function useJobFilter(initialJobs: JobPosting[]) {
   // 상태(State) 관리
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("all");
