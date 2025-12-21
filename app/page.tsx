@@ -1,5 +1,5 @@
-import Link from "next/link"; // Next.js 이동 전용 태그
-// 터미널에 'npm install lucide-react'를 입력해야 이 아이콘들이 보입니다.
+import Link from "next/link"; 
+// 주의 --> 터미널에 'npm install lucide-react'를 입력해야 이 아이콘들이 보입니다.
 import { ArrowRight, TrendingUp, DollarSign, MapPin, Briefcase } from "lucide-react";
 
 export default function Home() {
@@ -52,7 +52,7 @@ export default function Home() {
           <StatCard 
             icon={<MapPin className="w-5 h-5 text-orange-600" />}
             bg="bg-orange-100"
-            label="주요 지역"
+            label="주요 지역"   
             value="서울"
           />
         </div>
@@ -83,7 +83,7 @@ export default function Home() {
   );
 }
 
-// 반복되는 UI를 줄이기 위해 만든 작은 컴포넌트들 (같은 파일 아래에 두면 됩니다)
+// 반복되는 UI를 줄이기 위해 만든 작은 컴포넌트들 -> 같은 파일에 두고 재사용!
 
 function StatCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
   return (

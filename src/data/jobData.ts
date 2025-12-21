@@ -19,6 +19,6 @@ export interface JobPosting {
   companySize: string;
 }
 
-// 3. JSON 데이터를 타입으로 단언(Assertion)해서 내보내기
-// 이렇게 하면 다른 파일들은 이게 JSON인지 뭔지 신경 안 쓰고 그냥 가져다 쓰면 됩니다.
+// 3. JSON 데이터를 타입으로 단언(Assertion)해서 내보내기 -> 다른 파일에서는 JSON인지 구분하지 않고 편하게 가져갈 수 있음
+
 export const jobs: JobPosting[] = rawData as JobPosting[];

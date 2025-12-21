@@ -13,7 +13,7 @@ import {
   Cell,
 } from "recharts";
 
-// 차트 색상 배열도 이쪽으로 옮깁니다.
+//차트 색상 리스트 -> 원하는 대로 수정가능(오류x)
 const COLORS = [
   "#3b82f6",
   "#10b981",

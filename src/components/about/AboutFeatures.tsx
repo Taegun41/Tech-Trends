@@ -1,4 +1,3 @@
-// src/components/about/AboutFeatures.tsx
 import { BarChart3, TrendingUp, Database } from "lucide-react";
 
 export default function AboutFeatures() {

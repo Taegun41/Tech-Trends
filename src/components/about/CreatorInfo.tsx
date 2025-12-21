@@ -1,4 +1,3 @@
-// src/components/about/CreatorInfo.tsx
 import { Github, Mail, Globe } from "lucide-react";
 
 export default function CreatorInfo() {

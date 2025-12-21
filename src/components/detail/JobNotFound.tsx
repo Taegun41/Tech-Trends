@@ -1,4 +1,3 @@
-// src/components/detail/JobNotFound.tsx
 import Link from "next/link";
 
 export default function JobNotFound() {

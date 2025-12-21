@@ -6,7 +6,7 @@ import JobActionCard from "./JobActionCard";
 import CompanyInfoCard from "./CompanyInfoCard";
 import SimilarJobsCard from "./SimilarJobsCard";
 
-// 부모(Page)한테 받아야 할 준비물 목록
+// 부모(Page)한테 받아야 할 준비물 목록 -> 수정 x 수정시 코드 꼬임
 interface JobDetailViewProps {
   job: Job;
   similarJobs: Job[];

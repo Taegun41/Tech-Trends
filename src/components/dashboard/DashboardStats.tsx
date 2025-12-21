@@ -2,8 +2,8 @@
 
 import { Briefcase, DollarSign, TrendingUp, MapPin } from "lucide-react";
 
-// 부모 컴포넌트에게서 받아야 할 데이터(Props)의 타입을 정의합니다.
-// 데이터를 직접 계산하지 않고, 이미 계산된 결과값만 받아서 보여줍니다.
+// 부모 컴포넌트에게서 받아야 할 데이터(Props)의 타입을 정의.
+// 데이터를 직접 계산하지 않고, 결과값을 받아와서 표현
 interface DashboardStatsProps {
   totalCount: number;
   avgSalary: number;
@@ -47,7 +47,7 @@ export default function DashboardStats({
   );
 }
 
-// 이 파일 안에서만 쓸 작은 부품이므로 export 하지 않고 아래에 둡니다.
+
 function SummaryCard({
   icon,
   bg,

@@ -1,11 +1,11 @@
-"use client"; // 현재 주소를 확인하는 훅(usePathname)을 쓰기 위해 필수입니다.
+"use client"; 
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, LayoutDashboard, Info } from "lucide-react";
 
 export default function Navigation() {
-  const pathname = usePathname(); // 현재 보고 있는 페이지의 주소를 가져옵니다.
+  const pathname = usePathname(); 
 
   return (
     <nav className="border-g bg-white sticky top-0 z-50 shadow-sm">

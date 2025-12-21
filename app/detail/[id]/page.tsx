@@ -21,7 +21,7 @@ export default async function JobDetailPage({ params }: Props) {
   // 4. 연관 데이터 가져오기
   const similarJobs = getSimilarJobs(job);
 
-  // 5. 준비된 데이터를 View 컴포넌트에 던져주기 (여기가 핵심!)
+  // 5. 준비된 데이터를 View 컴포넌트에 던져주기
   return <JobDetailView job={job} similarJobs={similarJobs} />;
   
 }

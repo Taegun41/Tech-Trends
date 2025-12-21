@@ -1,4 +1,3 @@
-// src/app/about/page.tsx
 import AboutHeader from "@/src/components/about/AboutHeader";
 import ProjectOverview from "@/src/components/about/ProjectOverview";
 import AboutFeatures from "@/src/components/about/AboutFeatures";
@@ -29,10 +28,10 @@ export default function About() {
           {/* 6. 제작자 정보 */}
           <CreatorInfo />
 
-          {/* 7. 하단 면책 조항 (간단해서 여기 남겨둠) */}
+          {/* 7. 하단 면책 조항  */}
           <div className="mt-8 p-6 bg-gray-100 rounded-lg text-center">
             <p className="text-sm text-gray-600">
-              본 서비스의 모든 정보는 참고용이며, 실제 채용 조건과 다를 수 있습니다.
+              본 페이지는 대학교 과제로 작성된 것이며 직관적이고 다양한 이미지 표기를 위해 사실과 다른 정보가 있음을 알립니다.
               <br className="hidden md:block" />
               정확한 정보는 각 기업의 공식 채용 페이지를 확인해주세요.
             </p>

@@ -1,14 +1,12 @@
-// src/components/detail/JobActionCard.tsx
 interface JobActionCardProps {
   postedDate: string;
   deadline: string;
 }
 
 export default function JobActionCard({ postedDate, deadline }: JobActionCardProps) {
-  // D-Day 계산 로직
+  //모집공고 남은 시간 계산로직 ##수정 x
   const dDay = Math.ceil(
-    (new Date(deadline).getTime() - new Date().getTime()) /
-      (1000 * 60 * 60 * 24)
+    (new Date(deadline).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)
   );
 
   return (

@@ -1,4 +1,3 @@
-// src/components/detail/JobContent.tsx
 import { CheckCircle } from "lucide-react";
 
 interface JobContentProps {
@@ -8,12 +7,7 @@ interface JobContentProps {
   benefits: string[];
 }
 
-export default function JobContent({
-  techStack,
-  description,
-  requirements,
-  benefits,
-}: JobContentProps) {
+export default function JobContent({techStack,description,requirements,benefits}: JobContentProps) {
   return (
     <div className="space-y-8">
       {/* 기술 스택 */}

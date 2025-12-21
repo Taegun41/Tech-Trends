@@ -12,6 +12,8 @@ interface DashboardFiltersProps {
   selectedTech: string;
   setSelectedTech: (value: string) => void;
   uniqueLocations: string[];
+  uniqueLevels: string[];
+  uniqueTechs: string[];
 }
 
 export default function DashboardFilters({
@@ -24,6 +26,8 @@ export default function DashboardFilters({
   selectedTech,
   setSelectedTech,
   uniqueLocations,
+  uniqueLevels,
+  uniqueTechs,
 }: DashboardFiltersProps) {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
@@ -48,35 +52,32 @@ export default function DashboardFilters({
         >
           <option value="all">전체 지역</option>
           {uniqueLocations.map((loc) => (
-            <option key={loc} value={loc}>
-              {loc}
-            </option>
+            <option key={loc} value={loc}>{loc}</option>
           ))}
         </select>
 
-        {/* 경력 선택 */}
+        {/* 경력 선택 - 동적으로 변경됨 */}
         <select
           value={selectedLevel}
           onChange={(e) => setSelectedLevel(e.target.value)}
           className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="all">전체 경력</option>
-          <option value="주니어">주니어</option>
-          <option value="중급">중급</option>
-          <option value="시니어">시니어</option>
+          {uniqueLevels.map((level) => (
+            <option key={level} value={level}>{level}</option>
+          ))}
         </select>
 
-        {/* 기술 선택 */}
+        {/* 기술 선택 - 동적으로 변경됨 */}
         <select
           value={selectedTech}
           onChange={(e) => setSelectedTech(e.target.value)}
           className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="all">전체 기술</option>
-          <option value="React">React</option>
-          <option value="Node.js">Node.js</option>
-          <option value="Java">Java</option>
-          <option value="Python">Python</option>
+          {uniqueTechs.map((tech) => (
+            <option key={tech} value={tech}>{tech}</option>
+          ))}
         </select>
       </div>
     </div>

@@ -1,4 +1,3 @@
-// src/components/about/ProjectOverview.tsx
 export default function ProjectOverview() {
   return (
     <div className="bg-white p-8 mb-8 rounded-xl shadow-sm border border-gray-100">

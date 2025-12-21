@@ -1,4 +1,3 @@
-// src/components/detail/JobHeader.tsx
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 

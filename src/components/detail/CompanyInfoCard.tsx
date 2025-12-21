@@ -1,4 +1,3 @@
-// src/components/detail/CompanyInfoCard.tsx
 interface CompanyInfoCardProps {
   company: string;
   industry: string;
@@ -6,12 +5,7 @@ interface CompanyInfoCardProps {
   location: string;
 }
 
-export default function CompanyInfoCard({
-  company,
-  industry,
-  companySize,
-  location,
-}: CompanyInfoCardProps) {
+export default function CompanyInfoCard({company,industry,companySize,location,}: CompanyInfoCardProps) {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
       <h3 className="font-bold mb-4 text-gray-900">회사 정보</h3>

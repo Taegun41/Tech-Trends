@@ -1,4 +1,3 @@
-// src/components/about/AboutHeader.tsx
 export default function AboutHeader() {
   return (
     <div className="text-center mb-12">

@@ -1,4 +1,3 @@
-// src/components/detail/JobInfoGrid.tsx
 import { MapPin, DollarSign, Briefcase, Calendar } from "lucide-react";
 
 interface JobInfoGridProps {
@@ -43,15 +42,7 @@ export default function JobInfoGrid({
 }
 
 // 이 컴포넌트 안에서만 쓸 작은 부품
-function InfoItem({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
+function InfoItem({icon,label,value,}: {icon: React.ReactNode;label: string;value: string;}) {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex items-center gap-2 text-gray-500 mb-1">
